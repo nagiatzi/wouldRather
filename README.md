@@ -9,8 +9,8 @@ This project has been built as a part of react nanodegree present on Udacity. Th
 
 You must first clone the repository and then run:
 
-npm install                     # Or yarn install
-npm start                       # Or yarn start
+    npm install                     # Or yarn install
+    npm start                       # Or yarn start
 
 
 And you will have the application up and running.
