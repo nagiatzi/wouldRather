@@ -2,9 +2,8 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { dateFormat } from '../utils/moment';
 
-class QuestionSmall extends Component {
+class QuestionItem extends Component {
 
   render() {
     const { question, author } = this.props
@@ -20,7 +19,6 @@ class QuestionSmall extends Component {
             <h2>Would You Rather ...</h2>
             <p>{question.optionOne.text} or {question.optionTwo.text}?</p>
             <Link to={`/question/${question.id}`}>View Full</Link>
-            <p>{dateFormat(question.timestamp)}</p>
           </div>
         </div>
       </div>
@@ -36,4 +34,4 @@ function mapStateToProps( { users, questions }, {id} ) {
   }
 }
 
-export default connect(mapStateToProps)(QuestionSmall)
+export default connect(mapStateToProps)(QuestionItem)

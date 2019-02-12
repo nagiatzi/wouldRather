@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 
-import QuestionSmall from './QuestionSmall'
+import QuestionItem from './QuestionItem'
 
 class QuestionList extends Component {
 
@@ -32,7 +32,7 @@ class QuestionList extends Component {
             ? 'There are no questions available'
             : ids.map(id => (
             <li key={id}>
-              <QuestionSmall id={id}/>
+              <QuestionItem id={id}/>
             </li>
           ))}
         </ul>
