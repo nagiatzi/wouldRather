@@ -19,7 +19,7 @@ import {
     }
   };
   
-  export function saveQuestionAnswer(id, answer, authedUser) {
+  export function saveAnswer(id, answer, authedUser) {
     return {
       type: SAVE_ANSWER,
       id,

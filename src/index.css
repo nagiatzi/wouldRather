@@ -1,0 +1,245 @@
+/*
+#1988D8 - blue
+#78CCE4 - light blue
+#DE180B - red 
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  background: gray;
+}
+
+a {
+  color: #1988D8;
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+h1,h2,h3,p {
+  margin: 0;
+}
+h2 {
+  margin-bottom: 12px;
+}
+h4 {
+  color: red;
+}
+h5 {
+  margin: 8px 0;
+}
+
+.navigation {
+  background-color: white;
+  border-bottom: 3px #1988D8 solid;
+  color: #1988D8;
+  font-weight: bold;
+  width: 100%;
+  padding: 2px;
+}
+.navigation ul {
+  max-width: 768px;
+  margin: 16px auto
+}
+.navigation ul li {
+  display: inline-block;
+  padding-right: 24px
+}
+.navigation ul li.right {
+  padding-right: 0;
+  padding-left: 24px;
+  float: right;
+}
+.navigation ul li a:hover {
+  color: #78CCE4;
+}
+
+.container {
+  margin: 18px auto;
+  max-width: 768px;
+  background-color:white;
+}
+
+.question__list {
+  border: 2px grey solid;
+  border-radius: 10px;
+}
+.question__list button {
+  color: white;	
+  background: #1988D8;
+  border: none;
+  border-radius: 5px;
+  width: 50%;
+  padding: 8px;
+  font-weight: bold;
+  outline: none;
+}
+.question__list button.focus {
+  opacity: .6;
+}
+.question__list button.focus:hover {
+  opacity: .8;
+}
+.question__list ul {
+  margin: 30px;
+}
+.question__list ul li {
+  display: block;
+}
+
+.question {
+  color: white;
+  margin-bottom: 10px;
+  border: 2px solid #DE180B;
+}
+.question h3 {
+  background-color: #DE180B;
+  border-radius: 4px 4px 0 0;
+  color: inherit;
+  margin: 0;
+  padding: 16px 30px;
+}
+.question .question__wrapper {
+  color: black;
+  background-color: white;
+  border-radius: 0 0 4px 4px;
+  display: flex;
+  align-items: stretch;
+  padding: 30px;
+}
+.question .question__wrapper img {
+  width: 30%;
+  height: 30%;
+  padding-right: 32px;
+  margin: auto 0;
+}
+.question .question__wrapper .question__options, .question .question__wrapper .question--form {
+  border-left: 2px #DE180B solid;
+  padding-left: 32px;
+  width: 100%;
+}
+.question .question__wrapper .question__options span {
+  margin-left: 12px;
+  font-size: 20px;
+}
+.question .question__wrapper .question__options a {
+  background-color: white;
+  border: 2px solid #DE180B;
+  color: black;
+  display: inline-block;
+  padding: 4px 12px;
+  margin: 12px 0;
+}
+
+.question .question__wrapper .question__options a:hover {
+  color: white;
+  background-color: #DE180B;	
+}
+
+.question .question__wrapper .question--form input[type='submit'] {
+  background-color: white;
+  border: 2px solid #DE180B;
+  border-radius: 5px;
+  color: #DE180B;
+  display: block;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 12px;
+  cursor: pointer;
+  margin-top: 30px;
+  width: 100%;
+}
+
+.question .question__wrapper h2 {
+  color: #1988D8;
+}
+.question .question__wrapper .question-result {
+  border: 1px #DE180B solid;
+  border-radius: 4px;
+  padding: 8px;
+  position: relative;
+  margin-top: 32px;
+}
+.question .question__wrapper .question-result.true {
+  background: white;
+}
+.question .question__wrapper .question-result.true:after {
+  background-color: #1988D8;
+  border-radius: 50%;
+  color: white;
+  content: '-voted';
+  position: absolute;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  line-height: 15px;
+  top: -20px;
+  right: -20px;
+  height: 40px;
+  width: 40px;
+}
+
+textarea {
+  display: block;
+  margin-bottom: 10px;
+}
+ 
+
+ul.login__list {
+ background-color: gray;
+}
+
+.login__list li {
+  background-color: #1988D8;
+  border-radius: 5px;
+  color: #FFFFFF;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+.login__list li img {
+  height: 40px;
+  width: 40px;
+  margin-right: 15px;
+}
+.login__list li p {
+  margin-right: 12px;
+  width: 120px;
+}
+.login__list li button {
+  background-color: #DE180B;
+  color: white;
+  border: none;
+  font-weight: bold;
+  outline: none;
+  padding: 8px 12px;
+  cursor: pointer;
+}
+
+.login__list li button:hover {
+  background-color: white;
+  color: #DE180B;
+  border: 2px solid #DE180B;
+}
+
+
+@media screen and (max-width: 565px) {
+ .navigation {
+   padding: 5px;
+   padding-left: 15px;
+   padding-right: 15px;
+  }
+
+  .navigation ul li.right {
+    margin-right: 20px;
+    padding-right: 5px;
+    padding-left: 10px;
+    
+  }
+}
